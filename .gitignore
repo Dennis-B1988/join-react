@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Api
+src/environment/environment.prod.tsx
+
 # Misc
 /push.bat
