@@ -1,0 +1,58 @@
+.Log-in-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Log-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Log-in-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 3.8125rem;
+  font-weight: 700;
+}
+
+.Log-in-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+input {
+  width: 26.375rem;
+  border: 0.0625rem solid #d1d1d1;
+  border-radius: 0.625rem;
+  font-size: 20px;
+  padding: 12px 21px 12px 21px;
+}
+
+.Log-in-buttons {
+  display: flex;
+  gap: 2.1875rem;
+}
+
+.Log-in-buttons button {
+  border-radius: 0.5rem;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  padding: 15px 24px 15px 24px;
+  cursor: pointer;
+}
+
+.Log-in {
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+}
