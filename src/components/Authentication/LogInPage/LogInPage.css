@@ -1,18 +1,54 @@
 .Log-in-page {
   height: 100%;
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Log-in-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 67px;
+  padding-left: 77px;
+  padding-right: 77px;
+}
+
+.Log-in-header img {
+  width: 100px;
+}
+
+.Sign-up {
+  display: flex;
   align-items: center;
+  gap: 2.1875rem;
+  font-size: var(--font-size-primary);
+}
+
+.Sign-up button {
+  background-color: var(--color-primary);
+  border-radius: 0.5rem;
+  padding: 15px 16px 15px 16px;
+  color: var(--color-text-light);
+  font-size: 1rem;
 }
 
 .Log-in-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-primary-light);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  border-radius: 1.875rem;
+  padding: 48px 115px 48px 115px;
 }
 
-.Log-in-header {
+.Log-in-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,11 +60,22 @@ h1 {
   font-weight: 700;
 }
 
-.Log-in-inputs {
+.Log-in-input-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+}
+
+.Log-in-input {
+  position: relative;
+}
+
+.Log-in-input img {
+  position: absolute;
+  top: 50%;
+  right: 0.625rem;
+  transform: translate(-0.625rem, -50%);
 }
 
 input {
@@ -45,14 +92,27 @@ input {
 }
 
 .Log-in-buttons button {
+  border: 0.0625rem solid var(--color-primary);
   border-radius: 0.5rem;
   font-size: 1.3125rem;
   font-weight: 700;
   padding: 15px 24px 15px 24px;
-  cursor: pointer;
 }
 
 .Log-in {
   background-color: var(--color-primary);
-  color: var(--color-primary-light);
+  color: var(--color-text-light);
+}
+
+.Guest-log-in {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-dark);
+}
+
+.Log-in-footer {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+  padding-bottom: 67px;
+  color: var(--color-text-grey);
 }

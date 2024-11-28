@@ -1,25 +1,20 @@
-import { useState } from 'react';
+import LogInForm from './LogInForm/LogInForm';
 import './LogInPage.css';
 
 function LogInPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-
   return (
     <div className="Log-in-page">
-      <div className="Log-in-form">
-        <div className="Log-in-header">
-          <h1>Log in</h1>
-          <img src="src/assets/img/blue-line.png" alt="underline" />
+      <div className="Log-in-header">
+        <img src="src/assets/img/logo.svg" alt="logo" />
+        <div className="Sign-up">
+          <span>Not a Join user?</span>
+          <button className="Sign-up-button">Sign up</button>
         </div>
-        <div className="Log-in-inputs">
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-        </div>
-        <div className="Log-in-buttons">
-          <button className="Log-in">Log in</button>
-          <button className="Guest-log-in">Guest log in</button>
-        </div>
+      </div>
+      <LogInForm />
+      <div className="Log-in-footer">
+        <span>Privacy Policy</span>
+        <span>Legal notice</span>
       </div>
     </div>
   );

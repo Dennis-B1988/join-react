@@ -6,6 +6,10 @@
 
   --color-primary: #2a3647;
   --color-primary-light: #ffffff;
+  --color-text-dark: #2a3647;
+  --color-text-light: #ffffff;
+  --color-text-grey: #a8a8a8;
+  --font-size-primary: 1.25rem;
 }
 @supports (font-variation-settings: normal) {
   :root {
@@ -17,4 +21,8 @@
   margin: 0;
   padding: 0;
   font-family: Inter, sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
